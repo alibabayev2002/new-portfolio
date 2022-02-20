@@ -1,9 +1,90 @@
 <template>
-    <div class="section contact-section">
-        <div class="contact-container">
+<div class="w-100">
+    <div v-if="page_load" class="page-container container">
+    <div class="loading" >
+
+                <div class="item">
+                    <div class="ph-item">
+                        
+                    </div>
+                     
+                </div>
+                
+                 <div class="item">
+                    <div class="ph-item">
+                        
+                    </div>
+                    
+                </div>
+
+                 <div class="item">
+                    <div class="ph-item">
+                        
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="ph-item">
+                        
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="ph-item">
+                        
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="ph-item">
+                        
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="ph-item">
+                        
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="ph-item">
+                        
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="ph-item">
+                        
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="ph-item">
+                        
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="ph-item">
+                        
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="ph-item">
+                        
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="ph-item">
+                        
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="ph-item">
+                        
+                    </div>
+                </div>
+
+    </div>
+            </div>
+    <div class="section contact-section" v-else>
+         
+        <div class="contact-container" >
             
-            
- 
+
             <div class="row w-100 justify-content-center mt-3">
                 <table class="w-75">
                 <tr>
@@ -71,6 +152,7 @@
             
         </div>
     </div>
+</div>
 </template>
 <style>
 tr , td{
@@ -89,3 +171,17 @@ td:nth-child(odd){
     border-right: 1px solid #fff;
 }
 </style>
+<script>
+export default {
+    data(){
+        return {
+            page_load : true,
+        };
+    },
+    mounted(){
+        setTimeout(()=>{
+            this.page_load = false;
+        },2000)
+    },
+}
+</script>

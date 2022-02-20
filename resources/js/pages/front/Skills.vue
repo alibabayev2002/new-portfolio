@@ -1,6 +1,86 @@
 <template>
+
+
     <div class="page-container container">
-        <div class="title">
+         <div class="loading" v-if="page_load">
+
+                <div class="item">
+                    <div class="ph-item">
+                        
+                    </div>
+                     
+                </div>
+                
+                 <div class="item">
+                    <div class="ph-item">
+                        
+                    </div>
+                    
+                </div>
+
+                 <div class="item">
+                    <div class="ph-item">
+                        
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="ph-item">
+                        
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="ph-item">
+                        
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="ph-item">
+                        
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="ph-item">
+                        
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="ph-item">
+                        
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="ph-item">
+                        
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="ph-item">
+                        
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="ph-item">
+                        
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="ph-item">
+                        
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="ph-item">
+                        
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="ph-item">
+                        
+                    </div>
+                </div>
+            </div>
+            <template v-else>
+                <div class="title">
            <i class="fas fa-award mr-1 "></i> Skills
         </div>
         <div class="skills row w-100">
@@ -203,5 +283,21 @@
                     </div>
             </div>
         </div>
+            </template>
+        
     </div>
 </template>
+<script>
+export default {
+    data(){
+        return {
+            page_load : true,
+        };
+    },
+    mounted(){
+        setTimeout(()=>{
+            this.page_load = false;
+        },2000)
+    },
+}
+</script>

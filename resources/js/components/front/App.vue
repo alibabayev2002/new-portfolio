@@ -1,6 +1,18 @@
 <template>
-    <div id="#app">
-        <div class="wrapper">
+<div>
+    <div v-if="loading" class="lottie-div" style="background:white;">
+             <div class="element">
+                 <lottie-animation
+      ref="anim"
+      :animationData="require('../assets/animation3.json')"
+    />
+             </div>
+         </div>
+         <transition name="scale" mode="out-in">
+    <div id="#app" v-if="!loading">
+         
+        <div class="wrapper" >
+            
             <Header/>
             <main>
                 <transition name="page" mode="out-in">
@@ -13,13 +25,28 @@
             &copy;2021
     </footer> 
     </div>
+     </transition>
+</div>
 </template>
 
 <script>
 import Header from "../front/Header";
+import LottieAnimation from "lottie-web-vue";
 export default {
+    data(){
+        return {
+            loading:true,
+        }
+    },
     components : {
-        Header
-    }
+        Header,
+        LottieAnimation,
+
+    },
+    mounted(){
+        setTimeout(()=>{
+            this.loading = false;
+        },1000);
+    },
 }
 </script>

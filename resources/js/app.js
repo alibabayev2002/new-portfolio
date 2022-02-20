@@ -16,6 +16,8 @@ import routes from "./routes/front"
 Vue.use(VueRouter);
 
 import App from "./components/front/App";
+import LottieAnimation from 'lottie-web-vue' 
+Vue.use(LottieAnimation);
 
 Vue.component('app-component',App);
 
@@ -27,6 +29,7 @@ const router = new VueRouter(routes);
 
 router.beforeEach((to,from,next)=>{
     document.title = to.meta.title;
+    console.log(from);
     next();
 });
 

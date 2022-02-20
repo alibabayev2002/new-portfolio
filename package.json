@@ -9,7 +9,6 @@
         "prod": "npm run production",
         "production": "mix --production"
     },
-    
     "devDependencies": {
         "axios": "^0.21",
         "bootstrap": "^4.6.0",
@@ -25,11 +24,9 @@
         "vue-template-compiler": "^2.6.12"
     },
     "dependencies": {
+        "lottie-vuejs": "^0.4.0",
+        "lottie-web-vue": "^1.2.1",
         "vue-loader": "^15.9.8",
         "vue-router": "^3.5.2"
-        
     }
-    
-    
-    
 }

@@ -1,34 +1,185 @@
 <template>
    <div class="page-container container">
     
-        <div class="title">
-            <i class="fas fa-shield-virus mr-1 "></i> Projects
+     <div class="loading" v-if="page_load">
+
+                <div class="item">
+                    <div class="ph-item">
+                        
+                    </div>
+                     <div style="height:4.4rem" class="ph-item">
+                        
+                    </div>
+                </div>
+                 <div class="item">
+                    <div class="ph-item">
+                        
+                    </div>
+                     <div style="height:7.4rem" class="ph-item">
+                        
+                    </div>
+                </div>
+                
+                 <div class="item">
+                    <div class="ph-item">
+                        
+                    </div>
+                     <div style="height:4.8rem" class="ph-item">
+                        
+                    </div>
+                </div>
+
+                 <div class="item">
+                    <div class="ph-item">
+                        
+                    </div>
+                     <div style="height:7.4rem" class="ph-item">
+                        
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="ph-item">
+                        
+                    </div>
+                     <div style="height:4.4rem" class="ph-item">
+                        
+                    </div>
+                </div>
+            </div>
+       <template v-else>
+         <div class="title mt-2 text-dark">
+           <div  style="width:50px;display:inline-block">
+            <lottie-animation
+      ref="anim3"
+      :animationData="require('../assets/animation3.json')"
+      :loop="true"
+    /> </div> İŞTİRAK ETDİYİM LAYİHƏLƏR
         </div>
         <div class="projects row w-100">
             <div class="project-item col-12">
                 <div class="title">
+                    nizami880.az ( &copy; İTCity)
+                </div>
+                <div class="content">
+                    Azercellin nizaminin yübileyinə həsr etdiyi layihənin back end proqramlaşdırılması.(PHP)
+                </div>
+            </div>
+            <div class="project-item col-12">
+                <div class="title">
+                    kapitalbank.az ( &copy; İTCity)
+                </div>
+                <div class="content">
+                   Ölkənin ən böyük banklarıyla rəqabət göstərən Kapitalbank'ın web saytının full stack proqramlaşdırılması.(PHP,L)
+                </div>
+            </div>
+            <div class="project-item col-12">
+                <div class="title">
+                    seabreeze.az ( &copy; İTCity ,  &copy; OneStudio)
+                </div>
+                <div class="content">
+                    Seabreeze hotelin web saytının back end proqramlaşdırılması.(PHP)
+                </div>
+            </div>
+            <div class="project-item col-12">
+                <div class="title">
+                    radius.com.az ( &copy; İTCity  ,  &copy; Jeyhun Imanov Studio)
+                </div>
+                <div class="content">
+                   E-commerce proyekt (PHP,Laravel,VueJS)
+                </div>
+            </div>
+            <div class="project-item col-12">
+                <div class="title">
+                    dma.gov.az  ( &copy; İTCity  ,  &copy; Prosper)
+                </div>
+                <div class="content">
+                   Dövlət məşguliyyət agentliyinin saytının back end proqramlaşdırılmas.(PHP,Laravel)
+                </div>
+            </div>
+            <div class="project-item col-12">
+                <div class="title">
+                    cv.dma.gov.az  ( &copy; İTCity  ,  &copy; Prosper)
+                </div>
+                <div class="content">
+                    Dövlət məşğuliyyət agentliyinin HR layihəsinin back end proqramlaşdırılması.(PHP,Laravel)
+                </div>
+            </div>
+            <div class="project-item col-12">
+                <div class="title">
+                    tikin.az  ( &copy; İTCity  ,  &copy; OneStudio)
+                </div>
+                <div class="content">
+                    Finance Group şirkətinin logistika layihəsinin back end proqramlaşdırılması.(PHP,Laravel)
+                </div>
+            </div>
+            <div class="project-item col-12">
+                <div class="title">
+                    kinderland.az  ( &copy; İTCity  ,  &copy; OneStudio)
+                </div>
+                <div class="content">
+                    PHP , Laravel
+                </div>
+            </div>
+             <div class="project-item col-12">
+                <div class="title">
+                    MagicPort  ( &copy; İTCity)
+                </div>
+                <div class="content">
+                    PHP , Laravel
+                </div>
+            </div>
+
+             <div class="project-item col-12">
+                <div class="title">
+                   unec-jeas.com  ( &copy; İTCity)
+                </div>
+                <div class="content">
+                    PHP , Laravel , VueJS
+                </div>
+            </div>
+
+            <div class="project-item col-12">
+                <div class="title">
+                   irshad.az  ( &copy; İTCity)
+                </div>
+                <div class="content">
+                    PHP , Laravel
+                </div>
+            </div>
+        
+        </div>
+        <hr>
+        <div class="title text-dark">
+            <div  style="width:50px;display:inline-block">
+            <lottie-animation
+      ref="anim3"
+      :animationData="require('../assets/animation3.json')"
+      :loop="true"
+    /> </div> LAYİHƏLƏR
+        </div>
+        <div class="projects row w-100">
+           <div class="project-item col-12">
+                <div class="title">
                     Epona (e-commerce)
                 </div>
                 <div class="content">
-                    I have order make eCommerce website for EPONA. But after some time EPONA has canceled this order.
-                    I have used NodeJS, ExpressJS, MongoDB technologies
+                    Epona şirkətinin e-commerce full stack proqramlaşdırıması.(NodeJS,ExpressJS,MongoDB)
                 </div>
             </div>
             <div class="project-item col-12">
                 <div class="title">
-                   Individual Project - HAZIRCAVAB
+                    HAZIRCAVAB
                 </div>
                 <div class="content">
-                    We started individual project with my friend. He developed back-end and I developed Front-end. This project we have in Github. We have closed project becease of Education.
+                   Orta məktəbdə verilən test tapşırıqlarının həlləri.(PHP)
                 </div>
             </div>
             <div class="project-item col-12">
                 <div class="title">
-                   My Portfolio website
+                   Portfolio
                 </div>
                 <div class="content">
-                    This is my Portfolio website. There is all information about me, my skills and e.t.c.
-                    We started individual project with my friend. He developed back-end and I developed Front-end. This project we have in Github. We have closed project becease of Education.
+                   Öz portfolio'm
                 </div>
             </div>
             <div class="project-item col-12">
@@ -36,8 +187,7 @@
                    E-school
                 </div>
                 <div class="content">
-                    This is my Portfolio website. There is all information about me, my skills and e.t.c.
-                    We started individual project with my friend. He developed back-end and I developed Front-end. This project we have in Github. We have closed project becease of Education.
+                    An application written using laravel and php
                 </div>
             </div>
             <div class="project-item col-12">
@@ -49,78 +199,31 @@
                     An application written using laravel and php
                 </div>
             </div>
-            <div class="project-item col-12">
-                <div class="title">
-                    Collision game
-                </div>
-                <div class="content">
-                    App i write when i'm bored
-                </div>
-            </div>
-            <div class="project-item col-12">
-                <div class="title">
-                    Blog (tech)
-                </div>
-                <div class="content">
-                    App i write when i'm bored
-                </div>
-            </div>
+            <router-link tag="a" to="/projects" class="more-btn text-muted">
+                        Digər layihələr
+                    </router-link>
         </div>
-         <hr>
-         <div class="title mt-2">
-            Participated in the development of the following projects
-        </div>
-        <div class="projects row w-100">
-            <div class="project-item col-12">
-                <div class="title">
-                    nizami880.az
-                </div>
-                <div class="content">
-                    I have order make eCommerce website for EPONA. But after some time EPONA has canceled this order.
-                    I have used NodeJS, ExpressJS, MongoDB technologies
-                </div>
-            </div>
-            <div class="project-item col-12">
-                <div class="title">
-                   kapitalbank.az
-                </div>
-                <div class="content">
-                    We started individual project with my friend. He developed back-end and I developed Front-end. This project we have in Github. We have closed project becease of Education.
-                </div>
-            </div>
-            <div class="project-item col-12">
-                <div class="title">
-                    seabreeze.az
-                </div>
-                <div class="content">
-                    We started individual project with my friend. He developed back-end and I developed Front-end. This project we have in Github. We have closed project becease of Education.
-                </div>
-            </div>
-            <div class="project-item col-12">
-                <div class="title">
-                    ligthouse.az
-                </div>
-                <div class="content">
-                    We started individual project with my friend. He developed back-end and I developed Front-end. This project we have in Github. We have closed project becease of Education.
-                </div>
-            </div>
-            <div class="project-item col-12">
-                <div class="title">
-                    hr.oba.az
-                </div>
-                <div class="content">
-                    We started individual project with my friend. He developed back-end and I developed Front-end. This project we have in Github. We have closed project becease of Education.
-                </div>
-            </div>
-            <div class="project-item col-12">
-                <div class="title">
-                    caspianentertainment.com
-                </div>
-                <div class="content">
-                    We started individual project with my friend. He developed back-end and I developed Front-end. This project we have in Github. We have closed project becease of Education.
-                </div>
-            </div>
-        </div>
+        <hr>
+       </template>
 
    </div>
 </template>
+<script>
+import LottieAnimation from "lottie-web-vue";
+export default {
+    data(){
+        return {
+            page_load : true,
+        };
+    },
+    mounted(){
+        setTimeout(()=>{
+            this.page_load = false;
+        },2000)
+    },
+    components : {
+        LottieAnimation
+    }
+}
+</script>
+
